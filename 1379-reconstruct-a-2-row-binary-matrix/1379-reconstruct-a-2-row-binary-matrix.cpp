@@ -26,11 +26,7 @@ public:
                 lower-- ;
             }
             else if(colsum[i]==0)
-            {
                 ans[0][i] = ans[1][i] = 0 ;
-            }
-            else if(colsum[i]>0 && upper==0 && lower==0)
-            return x;
             else return x ;
         }
         if(lower==0 && upper==0)
