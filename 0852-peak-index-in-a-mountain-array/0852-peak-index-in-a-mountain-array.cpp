@@ -1,14 +1,15 @@
 class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& arr) {
-        map<int, int, greater<int> > mp ;
-        int i = 0 ;
+        int max = arr[0] ;
+        int i = 1 ;
         for( ; i<arr.size() ; i++)
         {
-            mp[arr[i]] = i ;;
+            if(arr[i]>max)
+                max = arr[i];
+            else
+                return i-1 ;
         }
-        auto it = mp.begin() ;
-        int x = (*it).second;
-        return x ;
+       return -1;
     }
 };
