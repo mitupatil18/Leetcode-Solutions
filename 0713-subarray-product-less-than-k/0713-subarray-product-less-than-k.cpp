@@ -7,19 +7,13 @@ public:
         for(i = 0 ; i<n ;i++)
         {
             prd *= nums[i];
-            if(prd<k)
-            {
-                ans+= i-j+1 ;
-            }
-            else
-            {
-                while(prd>=k)
+            while(prd>=k)
                 {
                     prd = prd/nums[j];
                     j++;
                 }
                 ans += i-j+1;
-            }
+            
         }
         return ans;
     }
