@@ -11,20 +11,21 @@
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int left, int right) {
-        ListNode* a = head ;
-        stack<int> s ;
-        int i = 1 ;
-        while(i<left)
+        ListNode *a = head , *b = NULL , *c ;
+        int cnt = 1 ;
+        stack<int> s;
+        while(a)
         {
-            i++ ;
-            a = a->next ;
-        }  
-        ListNode *b = a ;
-        while(i<=right)
-        {
+            if(cnt==left)
+            b = a;
+            if(b!=NULL)
             s.push(a->val);
+            if(cnt==right)
+            {
+                break ; 
+            }
+            cnt++;
             a = a->next ;
-            i++ ;
         }
         a = b ;
         while(!s.empty())
@@ -35,5 +36,4 @@ public:
         }
         return head ;
     }
-    
 };
