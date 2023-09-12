@@ -7,25 +7,25 @@ public:
         {
             v[s[i]-'a']++;
         }
-        int ans=0;
-        unordered_set<int> st;
-        for(int i=0; i<26; i++)
+        set<int> st;
+        for(int i = 0 ; i<26 ; i++)
         {
-            if(st.count(v[i])!=0) 
+            if(v[i]!=0)
             {
-                while(st.count(v[i])!=0 && v[i]>0) 
+                if(st.find(v[i])!=st.end())
                 {
-                    v[i]--;
-                    ans++;
-                } 
-                st.insert(v[i]); 
-            }
-            else
-            {
-                st.insert(v[i]); 
+                    while(st.find(v[i])!=st.end() && v[i]>0)
+                    {
+                        v[i]--;
+                        del++ ;
+                    }
+                    st.insert(v[i]);
+                }
+                else
+                st.insert(v[i]);
             }
         }
-        return ans; 
+        return del ;
     }
 
 };
