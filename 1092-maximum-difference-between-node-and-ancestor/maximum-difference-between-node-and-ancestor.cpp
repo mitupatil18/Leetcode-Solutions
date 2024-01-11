@@ -13,24 +13,19 @@ class Solution {
 public:
     int ans=0;
     void solve(TreeNode* root,int mini,int maxi){
-        if(!root->left && !root->right){
-            mini = min(mini,root->val);
-            maxi = max(maxi,root->val);
-            ans = max(ans,abs(mini-maxi));
-            return;
-        }
+        if(!root)
+        return ;
+        maxi = max(maxi,root->val);
+        mini = min(mini,root->val);
+        ans = max(ans,maxi-mini);
+        solve(root->left,mini,maxi);
+        solve(root->right,mini,maxi);
         
-        if(root->left){
-            ans = max(ans,abs(mini-maxi));
-            solve(root->left,min(mini,root->left->val),max(maxi,root->left->val));
-        }
-        if(root->right){
-            ans = max(ans,abs(mini-maxi));
-            solve(root->right,min(mini,root->right->val),max(maxi,root->right->val));
-        }
     }
     int maxAncestorDiff(TreeNode* root) {
-        solve(root,root->val,root->val);
+        int mini , maxi ;
+        mini = maxi = root->val;
+        solve(root,mini,maxi);
         return ans;
     }
 };
