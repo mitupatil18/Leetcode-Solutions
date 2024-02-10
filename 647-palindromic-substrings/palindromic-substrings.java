@@ -1,22 +1,20 @@
 class Solution {
-    public boolean isPallindrome(String s, int l , int r)
+    public int isPallindrome(String s, int l , int r)
     {
-        while(l<r)
+        int cnt = 0 ;
+        while(l>=0 && r<s.length() && s.charAt(l--)==s.charAt(r++))
         {
-            if(s.charAt(l++)!=s.charAt(r--))
-            return false;
+           cnt++ ;
         }
-        return true;
+        return cnt;
     }
     public int countSubstrings(String s) {
         int ans = 0 ;
         for(int i = 0 ; i<s.length();i++)
         {
-            for(int j = i; j<s.length();j++)
-            {
-                if(isPallindrome(s,i,j))
-                ans++ ;
-            }
+            int even = isPallindrome(s,i,i+1);
+            int odd = isPallindrome(s,i-1,i+1);
+            ans += even+odd +1 ;
         }
         return ans ;
     }
