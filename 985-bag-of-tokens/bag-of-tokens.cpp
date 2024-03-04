@@ -11,7 +11,7 @@ public:
                 s++;
                 ans = max(ans,s);
             }
-            else if(s>0 && power<t[j])
+            else if(s>0)
             {
                 s--;
                 power += t[j--];
