@@ -7,17 +7,14 @@ public:
         {
             if( power>=t[i])
             {
-                power -= t[i];
+                power -= t[i++];
                 s++;
                 ans = max(ans,s);
-                i++;
             }
             else if(s>0 && power<t[j])
             {
                 s--;
-                ans = max(ans,s);
-                power += t[j];
-                j--;
+                power += t[j--];
             }
             else
             break;
