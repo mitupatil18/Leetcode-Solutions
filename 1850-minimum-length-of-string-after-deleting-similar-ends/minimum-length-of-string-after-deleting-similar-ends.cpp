@@ -1,7 +1,7 @@
 class Solution {
 public:
     int minimumLength(string s) {
-        int i = 0 , j = s.size()-1 , ans = j-i+1;
+        int i = 0 , j = s.size()-1 ;
         while(i<j)
         {
             if(s[i]==s[j])
@@ -11,11 +11,10 @@ public:
                 i++ ;
                 while(s[j]==c && i<j)
                 j-- ;
-                ans = abs(j-i+1) ;
             }
             else
             break;
         }
-        return ans ;
+        return j-i+1 ;
     }
 };
