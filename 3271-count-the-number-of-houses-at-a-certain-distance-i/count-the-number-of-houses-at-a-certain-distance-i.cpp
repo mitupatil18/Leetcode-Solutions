@@ -1,19 +1,31 @@
 class Solution {
 public:
     vector<int> countOfPairs(int n, int x, int y) {
-        if(x>y)
-        return countOfPairs(n,y,x);
-        vector<int> res(n,0);
-        for(int i = 1 ; i<=n ;i++)
+        vector<vector<int>> g(n+1,vector<int>(n+1, 100000)) ;
+        for(int j = 1 ; j<n ;j++)
+            g[j][j+1] = g[j+1][j] = 1;
+        g[x][y]= g[y][x] = 1;
+        for(int k = 1 ; k<=n ;k++)
         {
-            for(int j = 1 ; j<i ; j++)
+            for(int i = 1 ; i<=n ;i++)
             {
-                int idx = i-j ;
-                idx = min(idx,abs(j-x)+abs(i-y)+1);
-                if(idx>=1)
-                res[idx-1] += 2;
+                for(int j = 1 ; j<=n ;j++)
+                {
+                    g[i][j] = min(g[i][j],g[i][k]+g[k][j]);
+                }
             }
         }
-        return res ;
+        vector<int> res(n);
+        for(int i = 1 ; i<=n ;i++)
+        {
+            for(int j = 1 ; j<=n ;j++)
+            {
+                if(i!=j)
+                {
+                    res[g[i][j]-1]++ ;
+                }
+            }
+        }
+        return res;
     }
 };
