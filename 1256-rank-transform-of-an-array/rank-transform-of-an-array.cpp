@@ -15,11 +15,8 @@ public:
         {
             auto x = q.top();
             q.pop();
-            cout<<x.first<<" "<<x.second<<endl;
             if(f!=1 && x.first!=prev)
-            {
-                n--;
-            }
+            n--;
             else 
             f= 0 ;
             arr[x.second] = n;
