@@ -9,7 +9,6 @@ public:
                 p /= nums[j];
                 j++;
             }
-            if(p<k)
             ans += (i - j + 1);
         }
         return ans;
