@@ -1,50 +1,57 @@
-#include <vector>
-#include <queue>
-using namespace std;
-
 class Solution {
 public:
-    void solve(vector<vector<char>>& grid) {
-        int n = grid.size();
-        int m = grid[0].size();
-        
-        // Mark visited cells
-        vector<vector<bool>> visited(n, vector<bool>(m, false));
-        
-        // Directions for BFS
-        vector<pair<int, int>> directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-        
-        // Perform BFS for each cell
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j < m; ++j) {
-                if (!visited[i][j] && grid[i][j] == 'O') {
-                    bool touchesBoundary = false;
-                    vector<pair<int, int>> componentCells;
+    void solve(vector<vector<char>>& g) {
+        int n = g.size(), m = g[0].size();
+        vector<vector<int>> v(n, vector<int>(m, 0));
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                int z = 0;
+                if (!v[i][j] && g[i][j] == 'O') {
+                    vector<pair<int, int>> vp;
+                    v[i][j] = 1;
                     queue<pair<int, int>> q;
                     q.push({i, j});
-                    visited[i][j] = true;
-                    
+                    if (i == 0 || i == n - 1 || j == 0 || j == m - 1)
+                        z = 1;
+                    vp.push_back({i, j});
                     while (!q.empty()) {
-                        auto [x, y] = q.front();
+                        int x = q.front().first, y = q.front().second;
                         q.pop();
-                        componentCells.push_back({x, y});
-                        
-                        if (x == 0 || x == n - 1 || y == 0 || y == m - 1)
-                            touchesBoundary = true;
-                        
-                        for (auto [dx, dy] : directions) {
-                            int nx = x + dx;
-                            int ny = y + dy;
-                            if (nx >= 0 && nx < n && ny >= 0 && ny < m && !visited[nx][ny] && grid[nx][ny] == 'O') {
-                                q.push({nx, ny});
-                                visited[nx][ny] = true;
-                            }
+                        if (x + 1 < n && !v[x + 1][y] && g[x + 1][y] == 'O') {
+                            v[x + 1][y] = 1;
+                            q.push({x + 1, y});
+                            if (x+1 == n - 1 || y == m - 1 || x+1==0 || y==0)
+                                z = 1;
+                            vp.push_back({x+1, y});
+                        }
+                        if (x - 1 >= 0 && !v[x - 1][y] && g[x - 1][y] == 'O') {
+                            v[x - 1][y] = 1;
+                            q.push({x - 1, y});
+                            if (x-1 == n - 1 || y == m - 1 || x-1==0 || y==0)
+                                z = 1;
+                            vp.push_back({x-1, y});
+                        }
+                        if (y - 1 >= 0 && !v[x][y - 1] && g[x][y - 1] == 'O') {
+                            v[x][y - 1] = 1;
+                            q.push({x, y - 1});
+                            if (x == n - 1 || y-1 == m - 1 || x==0 || y-1==0)
+                                z = 1;
+                            vp.push_back({x, y-1});
+                        }
+                        if (y + 1 < m && !v[x][y + 1] && g[x][y + 1] == 'O') {
+                            v[x][y + 1] = 1;
+                            q.push({x, y + 1});
+                            if (x == n - 1 || y+1 == m - 1 || x==0 || y+1==0)
+                                z = 1;
+                            vp.push_back({x, y+1});
                         }
                     }
-                    
-                    if (!touchesBoundary) {
-                        for (auto [x, y] : componentCells) {
-                            grid[x][y] = 'X';
+                    if(z!=1)
+                    {
+                        for(auto x : vp)
+                        {
+                            g[x.first][x.second] = 'X' ;
                         }
                     }
                 }
