@@ -1,20 +1,26 @@
-#include <unordered_map>
-#include <algorithm>
-#include <string>
-
-using namespace std;
-
 class Solution {
 public:
     string frequencySort(string s) {
-        unordered_map<char, int> m;
-        for (char c : s) {
-            m[c]++;
+        priority_queue<pair<int,char>> pq;
+        map<char,int> m;
+        for(auto x : s)
+        m[x]++;
+        for(auto x : m)
+        {
+            pq.push({x.second,x.first});
         }
-        sort(s.begin(), s.end(), [&](char a, char b) {
-            return m[a] > m[b] || (m[a] == m[b] && a < b);
-        });
-
-        return s;
+        string z;
+        while(!pq.empty())
+        {
+            int a  = pq.top().first;
+            char c = pq.top().second;
+            pq.pop();
+            while(a)
+            {
+                z.push_back(c);
+                a--;
+            }
+        }
+        return z;
     }
 };
