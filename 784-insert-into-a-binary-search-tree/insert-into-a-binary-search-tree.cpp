@@ -15,14 +15,14 @@ public:
         if(root==NULL)
         {
             TreeNode *a = new TreeNode(val);
-            return a ;
+            return a;
         }
         if(root->val==val)
-        return root ;
+        return root;
         if(val<root->val)
         root->left = insertIntoBST(root->left,val);
         if(val>root->val)
         root->right = insertIntoBST(root->right,val);
-        return root ;
+        return root;
     }
 };
