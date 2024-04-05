@@ -1,35 +1,37 @@
 class Solution {
 public:
-    string removeKdigits(string s, int k) {
-        stack<int> st;
-        for(int i = 0 ; i<s.size() ;i++)
-        {
-            while(!st.empty()&&s[i]<st.top() && k>0)
+    string removeKdigits(string num, int k) {
+        stack<char> s;
+        if (num.length() <= k)
+            return "0";
+        if (k == 0)
+            return num;
+        int n = num.size(), i;
+        if (n == 0)
+            return num;
+        s.push(num[0]);
+        for (i = 1; i < n; i++) {
+            while (k > 0 && !s.empty() && num[i] < s.top())
             {
-                st.pop();
-                k-- ;
+                s.pop();
+                k--;
             }
-            if(st.empty()&&s[i]=='0')
-            continue;
-            st.push(s[i]);
-        } 
-        while(!st.empty()&& k--)
-        {
-           st.pop();
+            s.push(num[i]);
+            if (s.size() == 1 && num[i] == '0')
+                s.pop();
         }
-
-       if(st.empty())
-       {
-       return "0";
-       }
-       string ans="";
-
-        while(!st.empty())
-        {
-            ans+=st.top();
-            st.pop();
+        while (k and !s.empty()) {
+            s.pop();
+            k--;
         }
-        reverse(ans.begin(),ans.end());
-        return ans;
+        string z;
+        while (!s.empty()) {
+            z.push_back(s.top());
+            s.pop();
+        }
+        reverse(z.begin(), z.end());
+        if (z.length() == 0)
+            return "0";
+        return z;
     }
 };
