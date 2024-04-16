@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int find(vector<int>& dp,int n)
+    int find(vector<int>& dp , int n)
     {
         if(n<=2)
         return n;
@@ -12,6 +12,7 @@ public:
     int climbStairs(int n) {
         if(n<=2)
         return n;
+        int t = n, cnt = 0 ;
         vector<int> dp(n+1,-1);
         return find(dp,n);
     }
