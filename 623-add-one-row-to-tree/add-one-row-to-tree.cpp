@@ -32,7 +32,7 @@ public:
         {
             TreeNode * t = new TreeNode(val);
             t->left=root;
-            return t;
+            root = t;
         }
         else
         {
