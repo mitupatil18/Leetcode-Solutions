@@ -1,41 +1,49 @@
 class Solution {
 public:
-    vector<int> spiralOrder(vector<vector<int>>& mt) {
-        vector<int> v;
-        int d = 0 , l = 0 , b = mt.size()-1, t = 0 , r = mt[0].size()-1, i , j;
-        while(l<=r && t<=b)
-        {
-            if(d==0)
-            {
-                for(i = l ; i<=r ; i++)
-                {
-                    v.push_back(mt[t][i]);
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        int r = matrix.size(), c = matrix[0].size();
+        vector<int>  v;
+        vector<vector<int>> vis(r, vector<int>(c,0));
+        int x1 = 0 , x2 = r-1, y1 = 0 , y2 = c-1;
+        while(x1 <= x2 && y1 <= y2) {
+            
+            for(int j = y1; j <= y2; j++) {
+                if (!vis[x1][j]) {
+                    v.push_back(matrix[x1][j]);
+                    vis[x1][j] = 1;
                 }
-                t++;
-                d = 1;
             }
-            else if(d==1)
-            {
-                for(i = t; i<=b ;i++ )
-                v.push_back(mt[i][r]);
-                r--;
-                d = 2;
+            x1++;
+
+           
+            for(int i = x1; i <= x2; i++) {
+                if (!vis[i][y2]) {
+                    v.push_back(matrix[i][y2]);
+                    vis[i][y2] = 1;
+                }
             }
-            else if(d==2)
-            {
-                for(i = r ; i>=l ;i--)
-                v.push_back(mt[b][i]);
-                b--;
-                d = 3;
-            }
-            else
-            {
-                for( i = b ; i>=t ; i--)
-                v.push_back(mt[i][l]);
-                l++;
-                d = 0;
+            y2--;
+
+            if(x1 <= x2) {
+                for(int j = y2; j >= y1; j--) {
+                    if (!vis[x2][j]) {
+                        v.push_back(matrix[x2][j]);
+                        vis[x2][j] = 1;
+                    }
+                }
+                x2--;
             }
 
+            
+            if(y1 <= y2) {
+                for(int i = x2; i >= x1; i--) {
+                    if (!vis[i][y1]) {
+                        v.push_back(matrix[i][y1]);
+                        vis[i][y1] = 1;
+                    }
+                }
+                y1++;
+            }
         }
         return v;
     }
