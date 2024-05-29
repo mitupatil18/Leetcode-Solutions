@@ -11,12 +11,13 @@
  */
 class Solution {
 public:
+    int ans = 0 ;
     int countNodes(TreeNode* root) {
-        if(root == nullptr) return 0;
-        int cnt = 0;
-        if(root != nullptr) cnt++;
-        cnt += countNodes(root->left);
-        cnt += countNodes(root->right);
-        return cnt;
+        if(root==NULL) return 0 ;
+        if(root)
+        ans += 1;
+        countNodes(root->left);
+        countNodes(root->right);
+        return ans;
     }
 };
