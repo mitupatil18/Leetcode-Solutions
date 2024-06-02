@@ -1,22 +1,19 @@
 class Solution {
 public:
-    int find(int ind, int &sum, vector<int>& dp, vector<int>& v) {
-        if (ind >= v.size())
-            return 0;
-            if(dp[ind]!=-1)
-            return dp[ind];
-        if (ind == v.size() - 1) {
-            dp[ind] = v[ind];
-            return dp[ind];
-        }
-        dp[ind] = max(find(ind + 1, sum, dp, v), find(ind + 2, sum, dp, v) + v[ind]);
-        return dp[ind];
+    int find(int i, vector<int>& dp, int n, vector<int>& nums)
+    {
+        if(i>=n)
+        return 0;
+        if(dp[i]!=-1)
+        return dp[i];
+        if(i==n-1)
+        return dp[i] = nums[i];
+        dp[i] = max(find(i+1,dp,n, nums), find(i+2,dp,n, nums)+nums[i]);
+        return dp[i];
     }
-
     int rob(vector<int>& nums) {
         int n = nums.size();
-        vector<int> dp(n + 1, -1);
-        int ind = 0, sum = 0;
-        return find(ind, sum, dp, nums);
+        vector<int> dp(n+1,-1);
+        return find(0,dp,n, nums);
     }
 };
