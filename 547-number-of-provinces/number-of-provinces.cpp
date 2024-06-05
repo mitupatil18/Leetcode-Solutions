@@ -1,39 +1,23 @@
 class Solution {
 public:
-    int findCircleNum(vector<vector<int>>& conn) {
-        int n = conn.size();
-        vector<int> v(n,0);
-        vector<vector<int>> e(n);
-        for(int i = 0; i<n ;i++)
+    void dfs(int i ,vector<int>& vis, vector<vector<int>>& c)
+    {
+        vis[i] = 1;
+        for(int j = 0 ; j<c[i].size() ; j++)
         {
-            for(int j = 0 ; j<n ;j++)
-            {
-                if(conn[i][j]==1)
-                {
-                    e[i].push_back(j);
-                }
-            }
+            if(!vis[j] && c[i][j]==1)
+            dfs(j,vis,c);
         }
-        int ans = 0 ;
-        for(int i = 0 ; i<n ;i++)
+    }
+    int findCircleNum(vector<vector<int>>& c) {
+        int n = c.size(), ans = 0;
+        vector<int> vis(n,0);
+        for(int i = 0 ; i<n; i++)
         {
-            if(v[i]==1) continue;
-            ans++;
-            v[i] = 1;
-            queue<int> q;
-            q.push(i);
-            while(!q.empty())
+            if(!vis[i])
             {
-                int x = q.front();
-                q.pop();
-                for(int j = 0 ; j<e[x].size() ;j++)
-                {
-                    if(v[e[x][j]]==0)
-                    {
-                        v[e[x][j]] = 1;
-                        q.push(e[x][j]);
-                    }
-                }
+                ans++ ;
+                dfs(i,vis,c);
             }
         }
         return ans;
