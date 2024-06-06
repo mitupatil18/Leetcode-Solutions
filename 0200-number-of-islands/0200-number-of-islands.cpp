@@ -1,48 +1,46 @@
 class Solution {
 public:
-    int numIslands(vector<vector<char>>& a) {
-        int i = 0 , j = 0 , l = 0 ;
-        vector<vector<int>> v( a.size() , vector<int> (a[0].size(), 0)); 
-        for(i = 0 ; i<a.size() ; i++)
+    int numIslands(vector<vector<char>>& g) {
+        int m = g.size(), n = g[0].size(), ans = 0 ;
+        for(int i = 0 ; i<m ; i++)
         {
-            for(j = 0 ;j<a[i].size() ; j++)
+            for(int j = 0 ; j<n ; j++)
             {
-                if(a[i][j]=='1' && v[i][j]==0)
+                if(g[i][j]=='1')
                 {
-                    queue<pair<int,int>> q ;
-                    l++ ;
-                    v[i][j] = 1 ;
+                    queue<pair<int,int>> q;
                     q.push({i,j});
-                    int r , c ;
+                    g[i][j] = 0 ;
                     while(!q.empty())
                     {
-                        r = q.front().first ;
-                        c = q.front().second ;
-                        if(r-1>=0 && a[r-1][c]=='1' && v[r-1][c]==0)
+                        int x = q.front().first;
+                        int y = q.front().second;
+                        q.pop();
+                        if(x-1>=0 && g[x-1][y]=='1')
                         {
-                            v[r-1][c] = 1 ;
-                            q.push({r-1,c});
+                            q.push({x-1,y});
+                            g[x-1][y] = '0';
                         }
-                        if(c-1>=0 && a[r][c-1]=='1' && v[r][c-1]==0)
+                        if(y-1>=0 &&  g[x][y-1]=='1')
                         {
-                            v[r][c-1] = 1 ;
-                            q.push({r,c-1});
+                            q.push({x,y-1});
+                            g[x][y-1] = '0' ;
                         }
-                        if(r+1<a.size() && a[r+1][c]=='1' && v[r+1][c]==0)
+                        if(x+1<m && g[x+1][y]=='1')
                         {
-                            v[r+1][c] = 1 ;
-                            q.push({r+1,c});
+                            q.push({x+1,y});
+                            g[x+1][y] = '0';
                         }
-                        if(c+1<a[0].size() && a[r][c+1]=='1' && v[r][c+1]==0)
+                        if(y+1<n &&  g[x][y+1]=='1')
                         {
-                            v[r][c+1] = 1 ;
-                            q.push({r,c+1});
+                            q.push({x,y+1});
+                            g[x][y+1] = '0';
                         }
-                    q.pop();
                     }
+                    ans++;
                 }
             }
         }
-        return l ;
+        return ans;
     }
 };
