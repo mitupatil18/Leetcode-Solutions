@@ -1,16 +1,29 @@
 class Solution {
 public:
-       bool checkValidString(string s) {
-        int cmin = 0, cmax = 0;
+    bool checkValidString(string s) {
+        int l = 0, r = 0;
         for (char c : s) {
-            if (c == '(')
-                cmax++, cmin++;
-            if (c == ')')
-                cmax--, cmin = max(cmin - 1, 0);
-            if (c == '*')
-                cmax++, cmin = max(cmin - 1, 0);
-            if (cmax < 0) return false;
+            if (c == '(' || c == '*') {
+                l++;
+            } else {
+                l--;
+            }
+            if (l < 0) {
+                return false;
+            }
         }
-        return cmin == 0;
+        
+        for (int i = s.size() - 1; i >= 0; --i) {
+            if (s[i] == ')' || s[i] == '*') {
+                r++;
+            } else {
+                r--;
+            }
+            if (r < 0) {
+                return false;
+            }
+        }
+        
+        return true;
     }
 };
