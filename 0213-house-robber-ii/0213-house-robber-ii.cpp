@@ -1,34 +1,25 @@
-
 class Solution {
 public:
-    int find(vector<int>& nums)
+    int find(int i , vector<int>& nums, vector<int>& dp)
     {
-        int prev = nums[0];
-        int prev2 = 0 , n = nums.size();
-        if(n==1) return nums[0];
-        for(int i = 1 ; i<n ; i++)
-        {
-            int take = nums[i];
-            if(i>1)
-            take += prev2 ;
-            int notTake = prev ;
-            int cur = max(take,notTake);
-            prev2 = prev ;
-            prev = cur ;
-        }
-        return prev ;
+        if(i==nums.size())
+        return 0 ;
+        if(dp[i]!=-1)
+        return dp[i];
+        if(i==nums.size()-1)
+        return dp[i] = nums[i];
+        dp[i] = max(find(i+1,nums,dp),find(i+2,nums,dp)+nums[i]);
+        return dp[i];
     }
     int rob(vector<int>& nums) {
-        vector<int> a, b ;
-        int n = nums.size();
+        int n= nums.size();
         if(n==1) return nums[0];
-        for(int i = 0 ; i<n ; i++)
-        {
-            if(i!=0)
-                a.push_back(nums[i]);
-            if(i!=n-1)
-                b.push_back(nums[i]);
-        }
-        return max(find(a),find(b));
+        vector<int> a, b;
+        for(int i = 0 ; i<n-1; i++)
+        a.push_back(nums[i]);
+        for(int i = 1 ; i<n; i++)
+        b.push_back(nums[i]);
+        vector<int> dp1(n,-1), dp2(n,-1);
+        return max(find(0,a,dp1),find(0,b,dp2));
     }
 };
