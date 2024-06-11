@@ -11,48 +11,39 @@
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        vector<int> ans ;
-        ListNode * a ;
         if(lists.size()==0)
-        return NULL ;
-        if(lists.size()==1) 
-        return lists[0];
-        int cnt = 0 ;
-        for(int i = 0 ; i<lists.size() ; i++)
+        return NULL;
+        ListNode *head = lists[0], *prev = NULL;
+        for(int i = 0 ; i<lists.size();i++)
         {
-            a = lists[i];
-            if(a==NULL)
-            cnt++;
-            else 
-            break;
+            if(head==NULL)
+            {
+                head = lists[i];
+            }
+            if(prev!=NULL)
+            {
+                prev->next = lists[i];
+            }
+            ListNode* a = lists[i];
+            while(a && a->next)
+            a = a->next;
+            if(a)
+            prev = a;
         }
-        if(cnt==lists.size())
-        return NULL ;
-        for(int i = 0 ; i<lists.size() ; i++)
+        priority_queue<int, vector<int>, greater<int>> pq;
+        ListNode *a = head;
+        while(a)
         {
-            a = lists[i];
-            while(a)
-            {
-                ans.push_back(a->val);
-                a = a->next;
-            }
+            pq.push(a->val);
+            a = a->next;
         }
-        sort(ans.begin(), ans.end());
-        ListNode *an , *prev = NULL ;
-        for(int i = 0 ; i<ans.size() ; i++)
+        a = head;
+        while(!pq.empty())
         {
-            ListNode *b = new ListNode(ans[i]);
-            if(prev==NULL)
-            {
-                an = b ;
-                prev = b ;
-            }
-            else
-            {
-                prev->next = b ;
-            }
-            prev = b ;
+            a->val = pq.top();
+            pq.pop();
+            a = a->next;
         }
-        return an ;
+        return head;
     }
 };
