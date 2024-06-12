@@ -1,38 +1,37 @@
 class Solution {
-private:
-    bool bound(int i,int j,int m,int n){
-        return i>-1&&j>-1&&i<m&&j<n;
-    }
 public:
-    int minimumEffortPath(vector<vector<int>>& arr) {
-        int m=arr.size(),n=arr[0].size();
-        vector<vector<bool>> vis(m,vector<bool>(n,false));
-        vector<vector<int>> dist(m,vector<int>(n,INT_MAX));
-        dist[0][0]=0;
-        using vi=vector<int>;
-        priority_queue<vi,vector<vi>,greater<vi>> pq;
-        pq.push({0,0,0});
-        int ans=0;
-        while(!pq.empty()){
-            int i=pq.top()[1];
-            int j=pq.top()[2];
-            int wt=pq.top()[0];
+    int minimumEffortPath(vector<vector<int>>& h) {
+        priority_queue<pair<int, pair<int,int>>,  
+        vector< pair<int, pair<int,int>>>,  
+        greater< pair<int, pair<int,int>>>> pq;
+        int n = h.size(), m = h[0].size();
+        vector<vector<int>> dist(n,vector<int>(m,1e9));
+        dist[0][0] = 0 ;
+        pq.push({0,{0,0}});
+        int dr[] = {-1,0,1,0};
+        int dc[] = {0,1,0,-1};
+        
+        while(!pq.empty())
+        {
+            auto it = pq.top();
             pq.pop();
-            if(vis[i][j])continue;
-            vis[i][j]=true;
-            int dx[4]={1,-1,0,0};
-            int dy[4]={0,0,1,-1};
-            for(int idx=0;idx<4;++idx){
-                int x=dx[idx]+i,y=dy[idx]+j;
-                if(!bound(x,y,m,n))continue;
-                if(vis[x][y])continue;
-                int cost=abs(arr[i][j]-arr[x][y]);
-                if(dist[x][y]>max(wt,cost)){
-                    dist[x][y]=max(wt,cost);
-                    pq.push({max(wt,cost),x,y});
+            int diff = it.first, r = it.second.first , c = it.second.second;
+            if(r==n-1 && c==m-1) return diff;
+            for(int i = 0 ; i<4 ;i++)
+            {
+                int nr = r+dr[i];
+                int nc = c+dc[i];
+                if(nr>=0 && nc>=0 && nr<n && nc<m)
+                {
+                    int newef = max(abs(h[r][c]-h[nr][nc]), diff);
+                    if(newef<dist[nr][nc])
+                    {
+                        dist[nr][nc] = newef;
+                        pq.push({newef,{nr,nc}});
+                    }
                 }
             }
         }
-        return dist[m-1][n-1];
+        return 0;
     }
 };
