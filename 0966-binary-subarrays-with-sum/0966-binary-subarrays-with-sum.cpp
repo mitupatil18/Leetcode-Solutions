@@ -3,15 +3,14 @@ public:
     int find(vector<int>& nums, int goal)
     {
         if(goal<0) return 0;
-        int i = 0 , j = 0 , sum = 0 , ans = 0, n = nums.size();
-        while(i<n)
+        int ans = 0 , i = 0, j = 0, sum = 0 ;
+        for( ; i<nums.size();i++)
         {
             sum += nums[i];
-            while(sum>goal && j<n)
+            while(sum>goal && j<nums.size())
             sum -= nums[j++];
             if(sum<=goal)
-            ans+= (i-j+1) ;
-            i++;
+            ans += (i-j+1);
         }
         return ans;
     }
