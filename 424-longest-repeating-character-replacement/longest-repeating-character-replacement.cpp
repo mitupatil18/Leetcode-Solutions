@@ -1,23 +1,23 @@
 class Solution {
 public:
     int characterReplacement(string s, int k) {
-        int n = s.size();
-        vector<int> count(26, 0);
-        int maxCount = 0, maxLength = 0;
-        int left = 0;
-
-        for (int right = 0; right < n; ++right) {
-            count[s[right] - 'A']++;
-            maxCount = max(maxCount, count[s[right] - 'A']);
-
-            if (right - left + 1 - maxCount > k) {
-                count[s[left] - 'A']--;
-                left++;
+        vector<int> v(26,0);
+        int l = 0 , r = 0, maxi = 0, ans = 0  ;
+        for(r = 0 ; r<s.size();r++)
+        {
+            v[s[r]-'A']++;
+            maxi = *max_element(v.begin(), v.end());
+            if((r-l+1)-maxi>k)
+            {
+                while((r-l+1)-maxi>k && l<=r)
+                {
+                    v[s[l]-'A']--;
+                    maxi = *max_element(v.begin(), v.end());
+                    l++;
+                }
             }
-
-            maxLength = max(maxLength, right - left + 1);
+            ans = max(ans,r-l+1);
         }
-
-        return maxLength;
+        return ans;
     }
 };
