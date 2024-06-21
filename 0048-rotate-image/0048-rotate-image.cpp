@@ -1,23 +1,17 @@
 class Solution {
 public:
-    void rotate(vector<vector<int>>& m) {
-        int i , j , k ;
-        for(i = 0; i<m.size();i++)
+    void rotate(vector<vector<int>>& mat) {
+        int n = mat.size();
+        vector<vector<int>> v(n,vector<int>(n,0));
+        for(int i = 0 ; i<n;i++)
         {
-            for(j = 0 ; j<m[0].size(); j++)
+            for(int j = 0 ; j<n;j++)
             {
-                if(i<j)
+                if(v[i][j]==0)
                 {
-                    swap(m[i][j],m[j][i]);
+                    swap(mat[i][j],mat[j][n-i-1]);
+                    v[i][j] = v[j][n-i-1] = 1;
                 }
-            }
-        }
-        i = 0 , j = m.size()-1,k = 0 ;
-        for( ; i<j;i++,j--)
-        {
-            for(k = 0 ; k<m.size();k++)
-            {
-                swap(m[k][i], m[k][j]);
             }
         }
     }
