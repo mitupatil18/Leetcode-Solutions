@@ -10,7 +10,7 @@ public:
         }
         int sum = 0 , ans = 0 ;
         map<int,int> m;
-        m[sum] = 0;
+        //m[sum] = 0;
         for(int i = 0 ; i<nums.size();i++)
         {
             sum += nums[i];
