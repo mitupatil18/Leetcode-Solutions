@@ -11,52 +11,38 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-         ListNode* a = l1 , *b = l2 , *n = NULL , *prev = NULL;
-         int c =  0 , s = 0 ;
-         while(a && b )
-         {
-            s = a->val+b->val+c ;
-            c = s/10;
-            s = s%10 ;
-            ListNode *x = new ListNode(s);
-            if(prev==NULL)
-            {
-                n = x;
-                prev = x ;
-            }
+        int c = 0, sum = 0 ;
+        ListNode *a = l1 , *b = l2, *head = NULL , *prev = NULL;
+        while(a || b)
+        {
+            sum = c;
+            if(a)
+            sum += a->val;
+            if(b)
+            sum += b->val;
+            
+            c = sum/10;
+            sum %= 10;
+            ListNode* z = new ListNode(sum);
+            if(head==NULL)
+            head = z;
             else
-            {
-                prev->next = x ;
-                prev = x ;
-            }
-            a = a->next ;
-            b = b->next ;
-         }
-         while(a)
-         {
-            s = c+a->val ;
-            c = s/10;
-            s = s%10 ;
-            ListNode *x = new ListNode(s);
-            prev->next = x ;
-            prev = x ;
-            a = a->next ;
-         }
-         while(b)
-         {
-            s = c+b->val ;
-            c = s/10;
-            s = s%10 ;
-            ListNode *x = new ListNode(s);
-            prev->next = x ;
-            prev = x ;
-            b = b->next ;
-         }
-         if(c>0)
-         {
-             ListNode *x = new ListNode(c);
-             prev->next = x ;
-         }
-         return n ;
+            prev->next = z;
+            prev = z;
+            if(a)
+            a = a->next;
+            if(b)
+            b = b->next;
+        }
+        if(c!=0)
+        {
+            ListNode* z = new ListNode(c);
+            if(head==NULL)
+            head = z;
+            else
+            prev->next = z;
+
+        }
+        return head;
     }
 };
