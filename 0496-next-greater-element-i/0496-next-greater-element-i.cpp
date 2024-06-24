@@ -2,19 +2,22 @@ class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
         stack<int> s;
-        int n = nums2.size();
         map<int,int> m;
-        for(int i = nums2.size()-1 ; i>=0 ;i--)
+        int j = nums2.size()-1;
+        while(j>=0)
         {
-            while(!s.empty() && s.top()<=nums2[i])
-            s.pop();
-            if(s.empty())
-            m[nums2[i]] = -1;
+           while(!s.empty() && s.top()<nums2[j])
+            {
+                s.pop();
+            }
+            if(!s.empty())
+            m[nums2[j]] = s.top();
             else
-            m[nums2[i]] = s.top();
-            s.push(nums2[i]);
+            m[nums2[j]] = -1;
+            s.push(nums2[j]);
+            j--;
         }
-        for(int i = 0 ; i<nums1.size() ; i++)
+        for(int i = 0 ; i<nums1.size();i++)
         nums1[i] = m[nums1[i]];
         return nums1;
     }
