@@ -23,12 +23,13 @@ public:
         if(l>=r)
         return NULL ;
         int mid = (l+r)/2 ;
-       TreeNode* x = new TreeNode(v[mid]);
+        TreeNode* x = new TreeNode(v[mid]);
         x->left = build(l,mid,v);
         x->right = build(mid+1,r,v);
         return x;
     }
-    TreeNode* balanceBST(TreeNode* root) {
+    TreeNode* balanceBST(TreeNode* root) 
+    {
         TreeNode *a = root ;
         vector<int> v ;
         find(a,v);
