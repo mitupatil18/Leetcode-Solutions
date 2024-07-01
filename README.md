@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Database
 |  |
 | ------- |
+| [0176-second-highest-salary](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0176-second-highest-salary) |
 | [0196-delete-duplicate-emails](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0196-delete-duplicate-emails) |
 | [0570-managers-with-at-least-5-direct-reports](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0570-managers-with-at-least-5-direct-reports) |
 | [0577-employee-bonus](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0577-employee-bonus) |
