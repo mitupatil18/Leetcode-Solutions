@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0229-majority-element-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0229-majority-element-ii) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0560-subarray-sum-equals-k) |
 | [1293-three-consecutive-odds](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1293-three-consecutive-odds) |
 ## Hash Table
@@ -15,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0205-isomorphic-strings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0229-majority-element-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0229-majority-element-ii) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0560-subarray-sum-equals-k) |
 ## Union Find
 |  |
@@ -46,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0229-majority-element-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0229-majority-element-ii) |
+| [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 ## Counting
 |  |
 | ------- |
@@ -70,4 +73,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1773-percentage-of-users-attended-a-contest](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1773-percentage-of-users-attended-a-contest) |
 | [1801-average-time-of-process-per-machine](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1801-average-time-of-process-per-machine) |
 | [1811-fix-names-in-a-table](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1811-fix-names-in-a-table) |
+## Two Pointers
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+## Binary Search
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 <!---LeetCode Topics End-->
