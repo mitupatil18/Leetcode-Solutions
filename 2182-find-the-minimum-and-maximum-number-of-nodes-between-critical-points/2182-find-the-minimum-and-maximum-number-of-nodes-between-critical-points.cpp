@@ -11,35 +11,23 @@
 class Solution {
 public:
     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-        vector<int> ans , v ;
-        ListNode *a = head->next, *b = head , *c;
-        int cnt  = 2, mn = INT_MAX ;
+        vector<int> v;
+        int i = 0 ;
+        ListNode *a = head->next, *prev = head;
         while(a->next)
         {
-            c = a->next ;
-            if(a->val>b->val && a->val>c->val || a->val<b->val && a->val<c->val )
-            {
-                v.push_back(cnt);
-            }
-            cnt++ ;
-            b = a ;
-            a = a->next ;
+            if((a->val>prev->val &&  a->val>a->next->val) ||(a->val<prev->val  && a->val<a->next->val))
+            v.push_back(i); 
+            prev = a;
+            a = a->next;
+            i++;
         }
-        if(v.empty() || v.size()==1)
+        if(v.size()<2)return {-1,-1} ;
+        int mini = INT_MAX, maxi = v[v.size()-1]-v[0];
+        for(int i = 0 ; i<v.size()-1;i++)
         {
-            ans.push_back(-1);
-            ans.push_back(-1);
+            mini = min(mini,v[i+1]-v[i]);
         }
-        else
-        {
-            for(int k = 0 ; k<v.size()-1 ; k++)
-            mn = min(mn,v[k+1]-v[k]);
-            ans.push_back(mn);
-            if(v.size()>1)
-            ans.push_back(v[v.size()-1]-v[0]);
-            else 
-            ans.push_back(mn);
-        }
-        return ans;
+        return {mini,maxi};
     }
 };
