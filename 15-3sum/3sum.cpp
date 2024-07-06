@@ -1,32 +1,31 @@
-#include <vector>
-#include <set>
-#include <algorithm>
-
 class Solution {
 public:
-    std::vector<std::vector<int>> threeSum(std::vector<int>& nums) {
-        std::vector<std::vector<int>> ans;
-        std::sort(nums.begin(), nums.end());
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        vector<vector<int>> v;
         int n = nums.size();
-        for (int i = 0; i < n - 2; ++i) {
-            if (i > 0 && nums[i] == nums[i - 1]) continue;
-            int target = -nums[i];
-            int left = i + 1, right = n - 1;
-            while (left < right) {
-                int sum = nums[left] + nums[right];
-                if (sum == target) {
-                    ans.push_back({nums[i], nums[left], nums[right]});
-                    while (left < right && nums[left] == nums[left + 1]) ++left;
-                    while (left < right && nums[right] == nums[right - 1]) --right;
-                    ++left;
-                    --right;
-                } else if (sum < target) {
-                    ++left;
-                } else {
-                    --right;
+        sort(nums.begin(),nums.end());
+        for(int i = 0 ; i<nums.size();i++)
+        {
+            if(i>0 && nums[i]==nums[i-1])
+            continue;
+            int j = i+1;
+            int k = nums.size()-1;
+            while(j<k)
+            {
+                int tot = nums[i]+nums[j]+nums[k];
+                if(tot>0)
+                k--;
+                else if(tot<0)
+                j++;
+                else
+                {
+                    v.push_back({nums[i],nums[j],nums[k]});
+                    j++;
+                    while (j<n && nums[j] == nums[j-1] && j < k) 
+                        j++;
                 }
             }
         }
-        return ans;
+        return v;
     }
 };
