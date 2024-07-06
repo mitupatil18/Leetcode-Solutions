@@ -1,31 +1,31 @@
-
-#include<bits/stdc++.h>
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        set<vector<int>> st ;
+        vector<vector<int>> v;
+        int n = nums.size();
         sort(nums.begin(),nums.end());
-        int i , j , k, n= nums.size() ;
-        for(i = 0 ; i<nums.size();i++)
+        for(int i = 0 ; i<nums.size();i++)
         {
-            j = i+1 , k = n-1 ;
+            if(i>0 && nums[i]==nums[i-1])
+            continue;
+            int j = i+1;
+            int k = nums.size()-1;
             while(j<k)
             {
-                if(nums[i]+nums[j]+nums[k]==0)
-                {
-                    st.insert({nums[i],nums[j],nums[k]});
-                    j++ ;
-                    k-- ;
-                }
-                else if(nums[i]+nums[j]+nums[k]>0)
-                k-- ;
-                else
+                int tot = nums[i]+nums[j]+nums[k];
+                if(tot>0)
+                k--;
+                else if(tot<0)
                 j++;
+                else
+                {
+                    v.push_back({nums[i],nums[j],nums[k]});
+                    j++;
+                    while (j<n && nums[j] == nums[j-1] && j < k) 
+                        j++;
+                }
             }
         }
-        vector<vector<int>> ans ;
-        for(auto i : st)
-        ans.push_back(i);
-        return ans ;
+        return v;
     }
 };
