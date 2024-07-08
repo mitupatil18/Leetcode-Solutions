@@ -1,20 +1,17 @@
 class Solution {
 public:
-    int maxScore(vector<int>& cp, int k) {
-        int lsum = 0 , rsum = 0 , ans= 0 ;
-        int i = 0 , n = cp.size(), j = n-1 ;
-        for(i = 0 ; i<k;i++)
-        lsum += cp[i];
+    int maxScore(vector<int>& c, int k) {
+        int sum1 = 0 , sum2 = 0 ;
+        for(int i = 0 ; i<k; i++)
+        sum1 += c[i];
+        int n = c.size(), j = n-1, i = k-1, ans = sum1;
         if(k==n)
-        return lsum;
-        ans = lsum;
-        j = n-1;
-        i = k-1;
+        return sum1;
         while(i>=0 && j>=n-k)
         {
-            lsum = lsum-cp[i];
-            rsum = rsum+cp[j];
-            ans = max(ans,lsum+rsum);
+            sum1 -= c[i];
+            sum2 += c[j];
+            ans = max(ans,sum1+sum2);
             i--;
             j--;
         }
