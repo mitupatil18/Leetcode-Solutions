@@ -11,14 +11,14 @@
  */
 class Solution {
 public:
-    int find(TreeNode* a , int& sum)
+    int find(TreeNode *a , int& sum)
     {
-        if(a==NULL) return 0;
+        if(a==NULL)
+        return 0;
         int l = max(0,find(a->left,sum));
         int r = max(0,find(a->right,sum));
-        int curr = a->val;
-        sum = max(sum,l+r+curr);
-        return max(l,r)+curr;
+        sum = max(l+r+a->val,sum);
+        return max(l,r)+a->val;
     }
     int maxPathSum(TreeNode* root) {
         if(root==NULL)
