@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0128-longest-consecutive-sequence](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0128-longest-consecutive-sequence) |
+| [0133-clone-graph](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0133-clone-graph) |
 | [0141-linked-list-cycle](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0169-majority-element](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
@@ -111,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0133-clone-graph) |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
 ## Database
 |  |
@@ -224,11 +226,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0133-clone-graph](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0133-clone-graph) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0133-clone-graph](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0133-clone-graph) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
 ## Binary Tree
 |  |
