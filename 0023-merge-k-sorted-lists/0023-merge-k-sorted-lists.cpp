@@ -13,37 +13,36 @@ public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         if(lists.size()==0)
         return NULL;
-        ListNode *head = lists[0], *prev = NULL;
-        for(int i = 0 ; i<lists.size();i++)
+        vector<int> v;
+        ListNode * ans = NULL; 
+        for(auto x : lists)
         {
-            if(head==NULL)
+            if(x!=NULL && ans==NULL)
+            ans = x;
+            while(x)
             {
-                head = lists[i];
+                v.push_back(x->val);
+                x = x->next;
+            }
+        }
+        sort(v.begin(),v.end());
+        int i = 0 ;
+        ListNode* prev = NULL;
+        for(int j = 0 ; j<lists.size();j++)
+        {
+            ListNode* x = lists[j], *y = NULL;
+            if(x==NULL) continue;
+            while(x)
+            {
+                x->val = v[i];
+                i++;
+                y = x;
+                x = x->next;
             }
             if(prev!=NULL)
-            {
-                prev->next = lists[i];
-            }
-            ListNode* a = lists[i];
-            while(a && a->next)
-            a = a->next;
-            if(a)
-            prev = a;
+            prev->next = lists[j];
+            prev = y;
         }
-        priority_queue<int, vector<int>, greater<int>> pq;
-        ListNode *a = head;
-        while(a)
-        {
-            pq.push(a->val);
-            a = a->next;
-        }
-        a = head;
-        while(!pq.empty())
-        {
-            a->val = pq.top();
-            pq.pop();
-            a = a->next;
-        }
-        return head;
+        return ans;
     }
 };
