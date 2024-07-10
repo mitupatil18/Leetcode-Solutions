@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1370-count-number-of-nice-subarrays) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -57,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0205-isomorphic-strings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 ## Sliding Window
 |  |
 | ------- |
@@ -167,4 +169,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+## Stack
+|  |
+| ------- |
+| [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 <!---LeetCode Topics End-->
