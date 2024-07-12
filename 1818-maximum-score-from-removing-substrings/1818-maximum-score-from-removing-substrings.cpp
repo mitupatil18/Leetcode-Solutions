@@ -2,7 +2,6 @@ class Solution {
 public:
     int maximumGain(string s, int x, int y) {
         int ans = 0;
-        // Process the higher value pair first
         if (x > y) {
             ans += removePairs(s, 'a', 'b', x);
             ans += removePairs(s, 'b', 'a', y);
@@ -26,8 +25,6 @@ private:
                 st.push(c);
             }
         }
-        
-        // Reconstruct the remaining string
         string remaining;
         while (!st.empty()) {
             remaining += st.top();
