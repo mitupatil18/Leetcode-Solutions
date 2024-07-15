@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1803-average-waiting-time](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2846-robot-collisions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2846-robot-collisions) |
 ## Hash Table
@@ -50,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0966-binary-subarrays-with-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Union Find
 |  |
 | ------- |
@@ -242,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -259,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
+| [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Backtracking
 |  |
 | ------- |
