@@ -244,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Depth-First Search
 |  |
@@ -251,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0133-clone-graph](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0133-clone-graph) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -262,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
+| [1653-number-of-good-leaf-nodes-pairs](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1653-number-of-good-leaf-nodes-pairs) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
 ## Backtracking
 |  |
