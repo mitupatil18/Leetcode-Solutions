@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2502-sort-the-people](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2846-robot-collisions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2846-robot-collisions) |
 ## Hash Table
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2306-create-binary-tree-from-descriptions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2306-create-binary-tree-from-descriptions) |
+| [2502-sort-the-people](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2502-sort-the-people) |
 ## Union Find
 |  |
 | ------- |
@@ -78,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1818-maximum-score-from-removing-substrings) |
+| [2502-sort-the-people](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2502-sort-the-people) |
 ## Sliding Window
 |  |
 | ------- |
@@ -115,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0726-number-of-atoms) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
+| [2502-sort-the-people](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2502-sort-the-people) |
 | [2846-robot-collisions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2846-robot-collisions) |
 ## Counting
 |  |
