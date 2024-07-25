@@ -1,24 +1,49 @@
 class Solution {
-    public int[] sortArray(int[] nums) {
-        int[] arr = new int[100001];
-        int max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
-        int x = 0;
-        for (int i : nums) {
-            x = 50000 + i;
-            arr[x]++;
-            if (min > x)
-                min = x;
-            if (max < x)
-                max = x;
-        }
-        int k = nums.length - 1, n = k + 1;
-        for (int i = max; i >= min; i--) {
-            if (arr[i] == 0)
-                continue;
-            int len = arr[i];
-            while (len-- > 0)
-                nums[k--] = i - 50000;
-        }
-        return nums;
+public:
+    void mergeSort(vector<int>& arr , int l , int h)
+    {
+        if(l==h)
+        return ;
+        int mid = (l+h)/2 ;
+        mergeSort(arr, l, mid);
+        mergeSort(arr, mid+1, h);
+        merge(arr, l , mid , h) ;
     }
-}
+    void merge(vector<int>& arr , int l , int mid , int h)
+    {
+        vector<int> temp ;
+        int left = l ;
+        int right = mid+1 ;
+        while(left<=mid && right<=h)
+        {
+            if(arr[left]<=arr[right])
+            {
+                temp.push_back(arr[left]);
+                left++ ;
+            }
+            else
+            {
+                temp.push_back(arr[right]);
+                right++ ;
+            }
+        }
+        while(left<=mid)
+        {
+            temp.push_back(arr[left]);
+            left++ ;
+        }
+        while(right<=h)
+        {
+            temp.push_back(arr[right]);
+                right++ ;
+        }
+        for(int i = 0 , j = l ; i<temp.size() ; i++,j++)
+        {
+            arr[j] = temp[i] ;
+        }
+    }
+    vector<int> sortArray(vector<int>& nums) {
+        mergeSort(nums,0,nums.size()-1);
+        return nums ;
+    }
+};
