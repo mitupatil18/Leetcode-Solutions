@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0015-3sum) |
 | [0031-next-permutation](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0031-next-permutation) |
 | [0053-maximum-subarray](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [0057-insert-interval](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0079-word-search) |
@@ -183,6 +184,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [1803-average-waiting-time](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -291,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [0079-word-search](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0079-word-search) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1496-lucky-numbers-in-a-matrix) |
 ## Merge Sort
