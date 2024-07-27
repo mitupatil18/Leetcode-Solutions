@@ -1,48 +1,36 @@
 class Solution {
 public:
-    vector<int> spiralOrder(vector<vector<int>>& matrix) {
-        int r = matrix.size(), c = matrix[0].size();
-        vector<int>  v;
-        vector<vector<int>> vis(r, vector<int>(c,0));
-        int x1 = 0 , x2 = r-1, y1 = 0 , y2 = c-1;
-        while(x1 <= x2 && y1 <= y2) {
-            
-            for(int j = y1; j <= y2; j++) {
-                if (!vis[x1][j]) {
-                    v.push_back(matrix[x1][j]);
-                    vis[x1][j] = 1;
-                }
+    vector<int> spiralOrder(vector<vector<int>>& mat) {
+        int r = mat.size(), c = mat[0].size();
+        vector<int> v;
+        int a = 0 , b = 0 , x = r-1, y = c-1;
+        while(a<=x && b<=y)
+        {
+            for(int j = b; j<=y; j++)
+            {
+                v.push_back(mat[a][j]);
             }
-            x1++;
-
-           
-            for(int i = x1; i <= x2; i++) {
-                if (!vis[i][y2]) {
-                    v.push_back(matrix[i][y2]);
-                    vis[i][y2] = 1;
-                }
+            a++;
+            for(int i = a; i<=x; i++)
+            {
+                v.push_back(mat[i][y]);
             }
-            y2--;
-
-            if(x1 <= x2) {
-                for(int j = y2; j >= y1; j--) {
-                    if (!vis[x2][j]) {
-                        v.push_back(matrix[x2][j]);
-                        vis[x2][j] = 1;
-                    }
+            y--;
+            if(a<=x)
+            {
+                for(int j = y; j>=b; j--)
+                {
+                    v.push_back(mat[x][j]);
                 }
-                x2--;
+                x--;
             }
-
-            
-            if(y1 <= y2) {
-                for(int i = x2; i >= x1; i--) {
-                    if (!vis[i][y1]) {
-                        v.push_back(matrix[i][y1]);
-                        vis[i][y1] = 1;
-                    }
+            if(b<=y)
+            {
+                for(int i = x; i>=a; i--)
+                {
+                    v.push_back(mat[i][b]);
                 }
-                y1++;
+                b++;
             }
         }
         return v;
