@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0038-count-and-say](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0038-count-and-say) |
 | [0079-word-search](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0079-word-search) |
 | [0205-isomorphic-strings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0647-palindromic-substrings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0647-palindromic-substrings) |
