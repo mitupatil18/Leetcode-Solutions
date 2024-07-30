@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0205-isomorphic-strings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0205-isomorphic-strings) |
 | [0647-palindromic-substrings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0647-palindromic-substrings) |
 | [0726-number-of-atoms](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0726-number-of-atoms) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
@@ -186,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0011-container-with-most-water) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Simulation
@@ -239,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0726-number-of-atoms](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0726-number-of-atoms) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
 | [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1756-minimum-deletions-to-make-string-balanced) |
