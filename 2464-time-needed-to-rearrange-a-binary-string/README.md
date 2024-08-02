@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string">2464. Time Needed to Rearrange a Binary String</a></h2><h3>Medium</h3><hr><p>You are given a binary string <code>s</code>. In one second, <strong>all</strong> occurrences of <code>&quot;01&quot;</code> are <strong>simultaneously</strong> replaced with <code>&quot;10&quot;</code>. This process <strong>repeats</strong> until no occurrences of <code>&quot;01&quot;</code> exist.</p>
+<h2><a href="https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string">Time Needed to Rearrange a Binary String</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given a binary string <code>s</code>. In one second, <strong>all</strong> occurrences of <code>&quot;01&quot;</code> are <strong>simultaneously</strong> replaced with <code>&quot;10&quot;</code>. This process <strong>repeats</strong> until no occurrences of <code>&quot;01&quot;</code> exist.</p>
 
 <p>Return<em> the number of seconds needed to complete this process.</em></p>
 
