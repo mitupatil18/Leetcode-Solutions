@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1756-minimum-deletions-to-make-string-balanced) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1818-maximum-score-from-removing-substrings) |
+| [2464-time-needed-to-rearrange-a-binary-string](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2464-time-needed-to-rearrange-a-binary-string) |
 | [2502-sort-the-people](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2502-sort-the-people) |
 | [2727-number-of-senior-citizens](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2727-number-of-senior-citizens) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/3235-minimum-cost-to-convert-string-i) |
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2271-rearrange-array-elements-by-sign) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2464-time-needed-to-rearrange-a-binary-string](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2464-time-needed-to-rearrange-a-binary-string) |
 | [2645-pass-the-pillow](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2645-pass-the-pillow) |
 | [2846-robot-collisions](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2846-robot-collisions) |
 ## Math
@@ -238,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1196-filling-bookcase-shelves](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1196-filling-bookcase-shelves) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1756-minimum-deletions-to-make-string-balanced](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1756-minimum-deletions-to-make-string-balanced) |
+| [2464-time-needed-to-rearrange-a-binary-string](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2464-time-needed-to-rearrange-a-binary-string) |
 ## Queue
 |  |
 | ------- |
