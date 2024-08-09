@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0485-max-consecutive-ones](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0485-max-consecutive-ones) |
 | [0560-subarray-sum-equals-k](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0560-subarray-sum-equals-k) |
+| [0870-magic-squares-in-grid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0948-sort-an-array) |
 | [0966-binary-subarrays-with-sum](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0966-binary-subarrays-with-sum) |
@@ -63,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0726-number-of-atoms](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0726-number-of-atoms) |
+| [0870-magic-squares-in-grid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0870-magic-squares-in-grid) |
 | [0966-binary-subarrays-with-sum](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0966-binary-subarrays-with-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -232,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0371-sum-of-two-integers](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0371-sum-of-two-integers) |
+| [0870-magic-squares-in-grid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0870-magic-squares-in-grid) |
 | [1370-count-number-of-nice-subarrays](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1370-count-number-of-nice-subarrays) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/2645-pass-the-pillow) |
@@ -337,6 +340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0054-spiral-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0054-spiral-matrix) |
 | [0079-word-search](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0079-word-search) |
+| [0870-magic-squares-in-grid](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0921-spiral-matrix-iii) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1496-lucky-numbers-in-a-matrix) |
 ## Merge Sort
