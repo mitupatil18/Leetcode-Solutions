@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1616-minimum-difference-between-largest-and-smallest-value-in-three-moves](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1616-minimum-difference-between-largest-and-smallest-value-in-three-moves) |
 | [1651-shuffle-string](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1651-shuffle-string) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 | [1720-crawler-log-folder](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1720-crawler-log-folder) |
 | [1803-average-waiting-time](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -322,6 +323,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0999-regions-cut-by-slashes) |
 | [1653-number-of-good-leaf-nodes-pairs](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1653-number-of-good-leaf-nodes-pairs) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -329,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0133-clone-graph](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0133-clone-graph) |
 | [0226-invert-binary-tree](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0226-invert-binary-tree) |
 | [0999-regions-cut-by-slashes](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0999-regions-cut-by-slashes) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Binary Tree
 |  |
 | ------- |
@@ -349,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0921-spiral-matrix-iii](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0921-spiral-matrix-iii) |
 | [0999-regions-cut-by-slashes](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/0999-regions-cut-by-slashes) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1496-lucky-numbers-in-a-matrix) |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 ## Merge Sort
 |  |
 | ------- |
@@ -367,4 +371,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/3235-minimum-cost-to-convert-string-i) |
+## Strongly Connected Component
+|  |
+| ------- |
+| [1691-minimum-number-of-days-to-disconnect-island](https://github.com/mitupatil18/Leetcode-Solutions/tree/master/1691-minimum-number-of-days-to-disconnect-island) |
 <!---LeetCode Topics End-->
