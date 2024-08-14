@@ -31,6 +31,3 @@ private:
         return count;
     }
 };
-
-
-//https://leetcode.com/problems/find-k-th-smallest-pair-distance/submissions/1354721188/
