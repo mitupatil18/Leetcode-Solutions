@@ -9,11 +9,8 @@ public:
         int ans = 0;
         
         for (int i = 1; i < n; ++i) {
-            // Compare the current subarray's first and last elements with minVal and maxVal
             ans = max(ans, abs(arr[i].back() - minVal));
             ans = max(ans, abs(maxVal - arr[i][0]));
-            
-            // Update minVal and maxVal
             minVal = min(minVal, arr[i][0]);
             maxVal = max(maxVal, arr[i].back());
         }
