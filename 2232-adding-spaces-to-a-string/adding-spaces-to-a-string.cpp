@@ -7,7 +7,6 @@ public:
         s += " ";
         int k = s.size()-1;
         int j = sp.size()-1;
-        cout<<i<<" "<<j<<" "<<k<<endl;
         while(i>=0 && j>=0)
         {
             if(i!=sp[j])
