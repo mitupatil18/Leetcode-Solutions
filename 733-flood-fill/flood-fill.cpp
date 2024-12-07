@@ -1,38 +1,27 @@
 class Solution {
 public:
-    vector<vector<int>> floodFill(vector<vector<int>>& mat, int sr, int sc, int color) {
-         if (mat[sr][sc] == color) return mat;
+    vector<vector<int>> floodFill(vector<vector<int>>& img, int sr, int sc, int color) {
+        int m = img.size(), n = img[0].size();
+        int org = img[sr][sc];
+        if(org==color) return img;
+        img[sr][sc] = color;
         queue<pair<int,int>> q;
-        int m= mat.size(), n = mat[0].size();
         q.push({sr,sc});
-        int val = mat[sr][sc];
+        int dx[] = {0,0,-1,1}, dy[] = {-1,1,0,0};
         while(!q.empty())
         {
-            int x = q.front().first;
-            int y = q.front().second;
+            auto x = q.front();
             q.pop();
-            mat[x][y] = color;
-            if(x-1>=0 && mat[x-1][y]==val)
+            for(int i = 0 ; i<4 ;i++)
             {
-                q.push({x-1,y});
-                mat[x-1][y] = color;
-            }
-            if(y-1>=0 && mat[x][y-1]==val)
-            {
-                q.push({x,y-1});
-                mat[x][y-1] = color;
-            }
-            if(x+1<m && mat[x+1][y]==val)
-            {
-                q.push({x+1,y});
-                mat[x+1][y] = color;
-            }
-            if(y+1<n && mat[x][y+1]==val)
-            {
-                q.push({x,y+1});
-                mat[x][y+1] = color;
+                int nx = x.first+dx[i], ny = x.second+dy[i];
+                if(nx>=0 && nx<m && ny>=0 && ny<n && img[nx][ny]==org)
+                {
+                    img[nx][ny]  = color;
+                    q.push({nx,ny});
+                }
             }
         }
-        return mat;
+        return img;
     }
 };
