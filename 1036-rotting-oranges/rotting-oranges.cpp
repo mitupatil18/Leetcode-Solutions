@@ -1,52 +1,49 @@
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& g) {
+        int tot = 0, cnt = 0 ;
+        int minutes = 0;
         int m = g.size(), n = g[0].size();
-        int ans = -1 , cnt = 0, org = 0  ;
         queue<pair<int,int>> q;
-        for(int i = 0 ; i<m ; i++)
+        for(int i = 0; i<m ;i++)
         {
-            for(int j = 0 ; j<n ; j++)
+            for(int j = 0; j<n ;j++)
             {
-                if(g[i][j]==1 || g[i][j]==2)
-                org++;
                 if(g[i][j]==2)
                 q.push({i,j});
+                else if(g[i][j]==1)tot++;
             }
         }
-        if(org == 0) return 0;
+        if(q.empty())
+        {
+            if(tot==0)
+            return 0;
+            return -1;
+        }
+        int dx[] = {0,0,-1,1}, dy[] = {-1,1,0,0};
         while(!q.empty())
         {
             int size = q.size();
-            cnt += size;
-            for(int i = 0 ; i<size; i++)
+            for(int i = 0 ; i<size ;i++)
             {
-                int x = q.front().first;
-                int y = q.front().second;
+                auto f = q.front();
                 q.pop();
-                if(x-1>=0 && g[x-1][y]==1)
+                for(int i = 0 ; i<4 ;i++)
                 {
-                    g[x-1][y] = 2;
-                    q.push({x-1,y});
-                }
-                if(y-1>=0 && g[x][y-1]==1)
-                {
-                    g[x][y-1] = 2;
-                    q.push({x,y-1});
-                }
-                if(x+1<m && g[x+1][y]==1)
-                {
-                    g[x+1][y] = 2;
-                    q.push({x+1,y});
-                }
-                if(y+1<n && g[x][y+1]==1)
-                {
-                    g[x][y+1] = 2;
-                    q.push({x,y+1});
+                    int nx = f.first+dx[i];
+                    int ny = f.second+dy[i];
+                    if(nx>=0 && nx<m && ny>=0 && ny<n && g[nx][ny]==1)
+                    {
+                        q.push({nx,ny});
+                        g[nx][ny] = 2;
+                        cnt++;
+                    }
                 }
             }
-            ans++;
+            minutes++;
         }
-        return org == cnt ? ans : -1;
+        if(tot==cnt)
+        return minutes-1;
+        return -1;
     }
 };
