@@ -35,7 +35,6 @@ public:
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                // Reset vis array using fill
                 for (int i = 0; i < m; i++) {
                     std::fill(vis[i].begin(), vis[i].end(), 0);
                 }
