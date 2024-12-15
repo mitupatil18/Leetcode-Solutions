@@ -21,17 +21,15 @@ public:
 
 class Solution {
 public:
-    unordered_map<Node*,Node*> m ;
+    map<Node*,Node*> m;
     Node* cloneGraph(Node* node) {
         if(node==NULL)
-        return NULL ;
+        return NULL;
         if(m.find(node)==m.end())
         {
             m[node] = new Node(node->val,{});
             for(auto it : node->neighbors)
-            {
-                m[node]->neighbors.push_back(cloneGraph(it));
-            }
+            m[node]->neighbors.push_back(cloneGraph(it));
         }
         return m[node];
     }
