@@ -11,11 +11,11 @@
  */
 class Solution {
 public:
-    int find(TreeNode* a , int& ans)
+    int find(TreeNode* root, int& ans)
     {
-        if(a==NULL)return 0;
-        int l = find(a->left,ans);
-        int r = find(a->right,ans);
+        if(root==NULL)return 0 ;
+        int l = find(root->left,ans);
+        int r = find(root->right,ans);
         ans = max(ans,l+r);
         return max(l,r)+1;
     }
