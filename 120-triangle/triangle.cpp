@@ -1,16 +1,24 @@
 class Solution {
 public:
-    int minimumTotal(vector<vector<int>>& triangle) {
-        int n = triangle.size();
-        vector<vector<int>> dp(n, vector<int>(n, 0));
-        for (int i = 0; i < n; ++i) {
-            dp[n-1][i] = triangle[n-1][i];
-        }
-        for (int i = n-2; i >= 0; --i) {
-            for (int j = 0; j <= i; ++j) {
-                dp[i][j] = triangle[i][j] + min(dp[i+1][j], dp[i+1][j+1]);
+    int minimumTotal(vector<vector<int>>& t) {
+        int m = t.size();
+        for(int i = 1; i<m ;i++)
+        {
+            for(int j = 0 ; j<=i ;j++)
+            {
+                cout<<t[i][j]<<" ";
+                if(j!=0 && j!=i)
+                t[i][j] = min(t[i-1][j-1], t[i-1][j])+t[i][j];
+                else if(j==0)
+                t[i][j] = t[i-1][j]+t[i][j];
+                else
+                t[i][j] = t[i-1][j-1]+t[i][j];
             }
+            cout<<endl;
         }
-        return dp[0][0];
+        int ans = t[m-1][0];
+        for(int i = 0; i<t[m-1].size(); i++)
+        ans = min(ans,t[m-1][i]);
+        return ans;
     }
 };
