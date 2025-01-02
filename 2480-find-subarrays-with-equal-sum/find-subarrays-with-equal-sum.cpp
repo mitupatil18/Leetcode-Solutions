@@ -6,7 +6,7 @@ public:
 		for(int i=0;i<n-1;i++){
 			for(int j=i+1;j<n-1;j++){
 				if(nums[j]+nums[j+1]==nums[i]+nums[i+1]) 
-                count++;
+                return 1;
 			}
 		}
 		return count>=1;
