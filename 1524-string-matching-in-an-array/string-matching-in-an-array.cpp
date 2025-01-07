@@ -4,7 +4,6 @@ public:
         vector<string> v;
         for(int i = 0 ; i<w.size();i++)
         {
-            string s = w[i];
             for(int j = 0 ; j<w.size();j++)
             {
                 if(i==j)continue;
